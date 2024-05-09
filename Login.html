@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body background="for.jpg">
+    
+    
+    <center><img Src = "Encabezado.png" width = 1200 ></center><br />
+
+    <center><table>
+        <tr>
+            <td width="1000">
+                <link rel="stylesheet" href="styles4.css">
+                    <body>
+                    <a href="cecy.html"><button class="gradient-button4"><img Src = "flec.webp" width = 20 > volver al menú</button></a>
+            </td>
+        </tr>
+      </table></center>
+      <br />
+
+    <center>
+        <table border="1">
+            <tr>
+                <td background="cale.jpg".jpg" width="500" height="500">
+                    <center>
+                        <body>
+
+                            <h1>EJEMPLO DE LOGIN</h1>
+                            <br />
+                            <h2>Iniciar Sesión</h2>
+                            <form id="loginForm">
+                                <label for="username" onfocus="this.value=''">Usuario:</label><br>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="password" onfocus="this.value=''">Contraseña:</label><br>
+                                <input type="password" id="password" name="password"><br><br>
+                                <button type="submit">Iniciar Sesión</button>
+                                <input type="reset" value="Limpiar" onclick="username, password"()">
+                            </form>
+                        
+                            <script>
+                                // Datos de usuario
+                                const usuarioCorrecto = "chris";
+                                const contraseñaCorrecta = "12345";
+                        
+                                // Función para verificar el inicio de sesión
+                                function verificarInicioSesion(event) {
+                                    event.preventDefault(); // Evita que el formulario se envíe
+                        
+                                    // Obtener los valores de usuario y contraseña
+                                    const usuario = document.getElementById("username").value;
+                                    const contraseña = document.getElementById("password").value;
+                        
+                                    // Verificar la autenticación
+                                    if (usuario === usuarioCorrecto && contraseña === contraseñaCorrecta) {
+                                        alert("Inicio de sesión exitoso");
+                                        // Redirigir al usuario a otra página
+                                        window.location.href = "cecy.html"; // Cambia "pagina_de_bienvenida.html" por la URL de la página a la que deseas redirigir al usuario
+                                    } else {
+                                        alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+                                    }
+                                }
+                        
+                                // Agregar el evento de escucha para el envío del formulario
+                                document.getElementById("loginForm").addEventListener("submit", verificarInicioSesion);
+                            </script>
+                        </body></center>
+                        <br>
+                </td>
+            </tr>
+        </table>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<html>
+<head><title>Sueldos y Salarios de un Trabajador </title>
+</head>
+<script>
+function Salario(){
+var PH=parseInt(document.FormSueldos.txtPH.value);
+var HT=parseInt(document.FormSueldos.txtHT.value);
+var DT=parseInt(document.FormSueldos.txtDT.value);
+var HE=parseInt(document.FormSueldos.txtHE.value);
+
+document.FormSueldos.txtPD1.value=PH*HT;
+document.FormSueldos.txtSSHE.value=PH*HT*DT;
+document.FormSueldos.txtPHE.value=(PH*2)*HE;
+document.FormSueldos.txtSSCHE.value=PH*HT*DT+PH*HE*2;
+document.FormSueldos.txtSQ.value=(PH*HT*DT+PH*HE*2)*2;
+document.FormSueldos.txtSM.value=(PH*HT*DT+PH*HE*2)*4;
+}
+</script>
+
+<body>
+<center><img Src = "en.png" width = 800 height = 80 ><img Src = "cecytem.png" width = 100 ></center><br / >
+<p><font color="black" size="4" face="tahoma"> <center>COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS DEL ESTADO DE MÉXICO.
+PLANTEL IXTLAHUACA </center></font></p>
+
+<p><font color="black" size="3" face="tahoma"> <center><strong>Elaborado por:</strong>Cristopher Antonio Antonio.
+<strong>Grupo:</strong> 404. <strong>Numero de Lista:</strong>3<br>
+<strong>Fecha de Elaboración:</strong> 21 de marzo de 2024.<strong> Hora:</strong>11:23 a.m.
+
+<p><font color="black" size= face="tahoma"><center><strong>El terreno de Luis</strong></center><br>
+
+    <center><table>
+        <tr>
+            <td width="1000">
+                <link rel="stylesheet" href="styles3.css">
+                    <body>
+                    <a href="cecy.html"><button class="gradient-button3"><img Src = "flec.webp" width = 20 > volver al menú</button></a>
+            </td>
+        </tr>
+      </table></center>
+      <br />
+
+<table width="1000" border="1">
+<Form name="FormSueldos">
+<tr>
+<td width="250"><label>ingresa el numero de folio:</label></td>
+<td width="250"><input type="text" name="txtFolio"></td>
+<td width="2" rowspan="6"><center><img Src = "tra.png" width = 250 height = 200 ></center></td>
+</tr>
+
+<tr>
+<td><label>Nombre :</label></td>
+<td><input type="text" name="txtNombre"></td>
+</tr>
+
+<tr>
+<td><label>Apellido paterno :</label></td>
+<td><input type="text" name="txtPaterno"></td>
+</tr>
+
+<tr>
+<td><label>Apellido materno</label></td>
+<td><input type="text" name="txtMaterno"></td>
+</tr>
+
+<tr>
+<td><label>Telefono</label></td>
+<td><input type="text" name="txtTelefono"></td>
+</tr>
+
+<tr>
+<td><label>Domicilio</label></td>
+<td><input type="text" name="txtDomicilio"></td>
+</tr>
+
+<tr>
+<td><label>Correo electronico</label></td>
+<td><input type="text" name="txtCorreo"></td>
+<td width="250"><label>Pago por dia:</label></td>
+<td width="250"><input type="text" name="txtPD1"></td>
+</tr>
+
+<tr>
+<td><label>Departamento</label></td>
+<td><input type="text" name="txtDepartamento"></td>
+<td><label>Sueldo semanal sin horas extras</label></td>
+<td><input type="text" name="txtSSHE"></td>
+</tr>
+
+<tr>
+<td><label>Pago por Hora:</label></td>
+<td><input type="text" name="txtPH"></td>
+<td><label>Pago Por Horas Extras</label></td>
+<td><input type="text" name="txtPHE"></td>
+</tr>
+
+<tr>
+<td><label>Horas trabajadas:</label></td>
+<td><input type="text" name="txtHT"></td>
+<td><label>Sueldo semanal con horas extras</label></td>
+<td><input type="text" name="txtSSCHE"></td>
+</tr>
+
+<td><label>Dias trabajados</label></td>
+<td><input type="text" name="txtDT"></td>
+<td><label>Sueldo quincenal:</label></td>
+<td><input type="text" name="txtSQ"></td>
+</tr>
+
+<td><label>Horas extras trabajadas</label></td>
+<td><input type="text" name="txtHE"></td>
+<td><label>Sueldo mensual:</label></td>
+<td><input type="text" name="txtSM"></td>
+</tr>
+
+<tr>
+<td colspan="4"><center><input type="button" value="CALCULAR" onclick="Salario()">
+<input type="reset" value="LIMPIAR" onclick="borrar()">
+<input type="button" value="REGRESAR AL MENU" onclick="Regresar()">
+<input type="button" value="CERRAR" onclick="Salir()">
+</center></td>
+</tr>
+</table>
+<br /><br /><br />
+</body>
+</form>
+</html>
+
+
+
+
+
+
+
+
+
+ 
+
+

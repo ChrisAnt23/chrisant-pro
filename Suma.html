@@ -1,0 +1,86 @@
+<html>
+<head><title>Suma de 2 números en HTML</title>
+</head><link rel="stylesheet" href="styles3.css">
+<body>
+<center><img Src = "en.png" width = 800 height = 80 ><img Src = "cecytem.png" width = 100 ></center><br / >
+<p><font color="black" size="4" face="tahoma"> <center>COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS DEL ESTADO DE MÉXICO.
+PLANTEL IXTLAHUACA </center></font></p>
+
+<p><font color="black" size="3" face="tahoma"> <center><strong>Elaborado por:</strong>Cristopher Antonio Antonio.
+<strong>Grupo:</strong> 404. <strong>Número de Lista:3</strong><br>
+<strong>Fecha de Elaboración:</strong> 7 de marzo de 2024.<strong> Hora:</strong>08:08 a.m.
+
+<p><font color="black" size= face="tahoma"><center><strong>Suma de 2 Números en HTML</strong></center><br>
+
+    <center><table>
+        <tr>
+            <td width="1000">
+                <a href="cecy.html"><button class="gradient-button3"><img Src = "flec.webp" width = 20 > volver al menú</button></a>
+            </td>
+        </tr>
+    </table></center>
+    <br />
+<script>
+function sumar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1+n2;
+}
+</script>
+
+<script>
+function restar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1-n2;
+}
+</script>
+
+<script>
+function multiplicar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document .MyForm.txtResultado.value=n1*n2;
+}
+</script>
+
+<script>
+function dividir(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document .MyForm.txtResultado.value=n1/n2;
+}
+</script>
+
+<body = bgcolor= "CCFFCC">
+<center><table width="1000" border="1">
+<form name="MyForm">
+<tr>
+<td width="300"><label>Dame el 1er Numero:</label></td>
+<td width="300"><input type="text" name="txtNumero1"></td>
+<td width="200" rowspan="4"><center><img Src = "mat.png" width = 250 height = 200 ></center></td>
+</tr>
+
+<tr>
+<td><label>Dame el 2do Numero:</label></td>
+<td><input type="text" name="txtNumero2"></td>
+</tr>
+
+<tr>
+<td><lavel>Mostrar Resultado:</label></td>
+<td><input type="text" name="txtResultado"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="button" value="SUMA" onclick="sumar()">
+<input type="button" value="RESTA" onclick="restar()">
+<input type="button" value="MULTIPLICACION" onclick="multiplicar()">
+<input type="button" value="DIVICION" onclick="dividir()"</td>
+</tr>
+</form>
+</table>
+</body></html>
+<center><img Src = "mem.png" width = 1000 height = 20 ></center><br />
+
+</body>
+</html>

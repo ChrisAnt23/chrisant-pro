@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Practica 2 Marquesinas</title>
+<head>
+<body>
+    
+
+<center><img Src = "en.png" width = 800 height = 80 ><img Src = "espa.png" width = 100 height = 80 ><img Src = "cecytem.png" width = 100 ></center><br / ><br />
+<center><img Src = "mem.png" width = 1000 height = 20 ></center><br />
+<h1><font size="6"><font face= "Calibri"><font color ="990033"><b><center>Elementos del formulario</center></b></font></font></font></h1>
+<h2><font size="4"><font face= "Calibri"><center><pre>Elaborado por Cristopher Antonio Antonio   Grupo:404   N.L:3 <br 7>
+ Fecha: 04/03/2024    Hora:12:35</pre></center></font></font></h2>
+
+ <center><table>
+    <tr>
+        <td width="1000">
+            <link rel="stylesheet" href="styles2.css">
+                <body>
+                <a href="cecy.html"><button class="gradient-button2"><img Src = "flec.webp" width = 20 > volver al menú</button></a>
+        </td>
+    </tr>
+  </table></center>
+  <br />
+
+
+<center><table = border "1"></center>
+
+<tr>
+<td> N° </td>
+<td><pre>                         Elementos de un formulario                         </pre></td>
+<td><pre>                         Ejemplo                         </pre></td>
+
+<tr>
+<td>1°</td>
+<td>Cajas de texto</td>
+<td><center><input type="text" id="cajaDeTexto" name="cajaDeTexto"></center></td>
+
+<tr>
+<td>2°</td>
+<td>Boton</td>
+<td> <button type="button">Haz clic aquí</button></td>
+
+<tr>
+<td>3°</td>
+<td>Combo box</td>
+<td><select name="opciones" id="opciones">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+        <option value="opcion4">Opción 4</option>
+    </select></td>
+
+<tr>
+<td>4°</td>
+<td>List box</td>
+<td><select name="lista" id="lista" size="4">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+        <option value="opcion4">Opción 4</option>
+    </select></td>
+
+<tr>
+<td>5°</td>
+<td>Casilla de verificacion </td>
+<td><input type="checkbox" id="casillaDeVerificacion" name="casillaDeVerificacion">
+    <label for="casillaDeVerificacion">Selecciona esta casilla</label></td>
+
+<tr>
+<td>6°</td>
+<td>Imagen</td>
+<td><img src = "imax.jpg" width = 100 ></td>
+
+<tr>
+<td>7°</td>
+<td>Area de texto</td>
+<td><textarea id="areaDeTexto" name="areaDeTexto" rows="4" cols="50">
+    </textarea></td>
+
+<tr>
+<td>8°</td>
+<td>Control deslizante</td>
+<td><style>
+    #slider-container {
+        position: relative;
+        width: 200px;
+        height: 30px;
+    }
+    
+    #slider-track {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 4px;
+        background-color: #ccc;
+        transform: translateY(-50%);
+    }
+    
+    #slider-thumb {
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #007bff;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="slider-container">
+        <div id="slider-track"></div>
+        <div id="slider-thumb"></div>
+    </div>
+    
+    <script>
+        const sliderThumb = document.getElementById('slider-thumb');
+        const sliderTrack = document.getElementById('slider-track');
+        const sliderContainer = document.getElementById('slider-container');
+        
+        let isDragging = false;
+        
+        sliderThumb.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            updateThumbPosition(e.clientX);
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                updateThumbPosition(e.clientX);
+            }
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+        
+        function updateThumbPosition(clientX) {
+            const containerRect = sliderContainer.getBoundingClientRect();
+            const trackWidth = containerRect.width;
+            const trackLeft = containerRect.left;
+            let newPos = clientX - trackLeft;
+            newPos = Math.max(0, Math.min(newPos, trackWidth));
+            
+            sliderThumb.style.left = newPos + 'px';
+        }
+    </script></td>
+
+<tr>
+<td>9°</td>
+<td>Etiqueta</td>
+<td><h2>Ingresa tu nombre</h2></td>
+
+<tr>
+<td>10°</td>
+<td>Puntero en copa</td>
+<td><div class="cup-pointer">
+</div></td>
+
+<body>
+<html>

@@ -1,0 +1,14 @@
+elabora una  pagina web en html para abordar el tema fentanilo: (a la primera te mata) 
+los elemtos de la pagina web son:
+- en cabezzado relacionado  con el tema de adicciones 
+-datos personales 
+-desarrollo de tema (elabora un organizador grafico para insertarlo en la pagina web)
+-pie de pagina
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el Fentanilo</title>
+    <style>

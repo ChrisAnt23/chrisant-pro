@@ -1,0 +1,89 @@
+<html>
+<head><title>Promedio de un alumno</title>
+</head>
+
+<center><img Src = "en.png" width = 800 height = 80 ><img Src = "cecytem.png" width = 100 ></center><br / >
+<p><font color="black" size="4" face="tahoma"> <center>COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS DEL ESTADO DE MÉXICO.
+PLANTEL IXTLAHUACA </center></font></p>
+
+<p><font color="black" size="3" face="tahoma"> <center><strong>Elaborado por:</strong>Cristopher Antonio Antonio.
+<strong>Grupo:</strong> 404. <strong>Numero de Lista:3</strong><br>
+<strong>Fecha de Elaboración:</strong> 19 de marzo de 2024.<strong> Hora:</strong>07:15 a.m.
+
+<p><font color="black" size= face="tahoma"><center><strong>PROMEDIO.html</strong></center><br>
+
+<script>
+function multiplicar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+var n3= parseInt(document.MyForm.txtNumero3.value);
+var n4= parseInt(document.MyForm.txtNumero4.value);
+var n5= parseInt(document.MyForm.txtNumero5.value);
+var n6= parseInt(document.MyForm.txtNumero6.value);
+var n7= parseInt(document.MyForm.txtNumero7.value);
+document.MyForm.txtcalcular.value=(n1+n2+n3+n4+n5+n6+n7)/7;
+}
+</script>
+
+<body bgcolor = "CCFF33">
+<center><table width="1000" border="1">
+<form name="MyForm">
+
+<tr><center><b>PROMEDIO DE UN ALUMNO</b></center></tr>
+
+<tr>
+<td width="300" height = 10><label>Calculo diferencial:</label></td>
+<td width="300" ><input type="text" name="txtNumero1"></td>
+<td width="200" rowspan="4"><center><img src="alu.jpg" width = 250 height = 250"></center></td>
+</tr>
+
+
+<tr>
+<td height = 10><label>Ingles IIII:</label></td>
+<td height = 10><input type="text" name="txtNumero2"></td>
+</tr>
+
+
+<tr>
+<td height = 10><label>Fisica:</label></td>
+<td height = 10><input type="text" name="txtNumero3"></td>
+</tr>
+
+
+<tr>
+<td height = 10><label>Ecologia:</label></td>
+<td height = 10><input type="text" name="txtNumero4"></td>
+</tr>
+
+<tr>
+<td><label>Submodulo I:</label></td>
+<td><input type="text" name="txtNumero5"></td>
+</tr>
+
+<tr>
+<td><label>submodulo II:</label></td>
+<td><input type="text" name="txtNumero6"></td>
+</tr>
+
+<tr>
+<td><label>submodulo III:</label></td>
+<td><input type="text" name="txtNumero7"></td>
+</tr>
+<tr>
+<td><label><b>Mostrar Resultado:</b></label></td>
+<td><input type="text" name="txtcalcular"></td>
+</tr>
+
+<tr>
+<td colspan="2"><center><input type="button" value="CALCULAR" onclick="multiplicar()"</center></td>
+</tr>
+<br />
+</form>
+</table>
+</body>
+</body>
+<br /><br />
+<center><img Src = "mem.png" width = 1000 height = 20 ></center><br />
+
+</body>
+</html>

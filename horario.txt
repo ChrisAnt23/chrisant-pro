@@ -1,0 +1,17 @@
+<html>
+<head><title>P2_Tablas</title></head>
+<body>
+
+<center><img Src = "en.png" width = 800 height = 80 ><img Src = "espa.png" width = 100 height = 80 ><img Src = "cecytem.png" width = 100 ></center><br / ><br />
+
+<h2><font size="4"><font face= "Calibri"><center><b>"2024, Ano del Bincentenario de la Educacion <br 7>
+ del Estado libre y Soberano de Mexico"</b></center></font></font></h2>
+
+<h2><font size="5"><font face= "Tahoma"><center>HORARIO DEL GRUPO <br 7>
+SEMESTRE: FEBRERO - AGOSTO 2024</center></font></font></h2>
+
+
+
+</body>
+
+</html>
